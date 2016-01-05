@@ -5,6 +5,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset= utf-8">
   <title>12-30 工艺品</title>
   <link href="index.css" rel="stylesheet">
+  <script src="jquery-1.11.1.min.js"></script>
+  <script src="MSClass.js"></script>
 </head>
 <body>
 	<div class="wrap">
@@ -76,21 +78,31 @@
 						<div class="slide-div">
 							<div class="slide-top">
 								<ul>
-									<li><a href="">首页</a></li>
+									<li class="active"><a href="">首页</a></li>
 									<li><a href="">团购促销</a></li>
 									<li><a href="">名师荟萃</a></li>
 									<li><a href="">艺品驿站</a></li>
 								</ul>
 							</div>
-							<div class="slide">
-								<div class="slide-scroll">
-									<ul>
+							<script>
+								$(".slide-top ul li").click(function(){
+									$(this).siblings().removeClass("active");
+									$(this).addClass("active");
+								})
+							</script>
+							<div class="slide" id="slide">
+								<div class="slide-scroll" id="slide-scroll1">
+									<ul id="slide-scroll">
+										<li><a href=""><img src="images/slide.png" alt="" height="363" width="586" /></a></li>
+										<li><a href=""><img src="images/slide.png" alt="" height="363" width="586" /></a></li>
+										<li><a href=""><img src="images/slide.png" alt="" height="363" width="586" /></a></li>
+										<li><a href=""><img src="images/slide.png" alt="" height="363" width="586" /></a></li>
 										<li><a href=""><img src="images/slide.png" alt="" height="363" width="586" /></a></li>
 									</ul>
 								</div>
 								<div class="slide-n">
-									<ul>
-										<li><a href="">韵香观音王</a></li>
+									<ul  id="slide-n">
+										<li class="on"><a href="">韵香观音王</a></li>
 										<li><a href="">御品观音王</a></li>
 										<li><a href="">满嘴留香金骏眉</a></li>
 										<li><a href="">花韵正山小种</a></li>
@@ -98,6 +110,21 @@
 									</ul>
 								</div>
 							</div>
+							<script>
+								new Marquee(
+									{
+										MSClass : ["slide-scroll1","slide-scroll","slide-n"],
+										Direction : 0,
+										Step : [0.4,"easeOutElastic"],
+										Width : 583,
+										Height : 363,
+										Timer : 50,
+										DelayTime : 5000,
+										WaitTime : 3000,
+										ScrollStep: 363,
+										AutoStart : 1
+									});
+							</script>
 						</div>
 						<div class="good-design">
 							<div class="good-con">

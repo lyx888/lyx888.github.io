@@ -250,10 +250,16 @@ body{
 }
 .slide-con .slide-div .slide-top ul li{
 	width:100px;
-	height:21px;
+	height:29px;
 	float: left;
 	text-align: center;
 	padding-top: 10px;
+}
+.slide-con .slide-div .slide-top ul li.active{
+	background-color: #A3DF6E;
+}
+.slide-con .slide-div .slide-top ul li:hover{
+	background-color: #A3DF6E;
 }
 .slide-con .slide-div .slide-top ul li a{
 	color:#F5FAED;
@@ -290,6 +296,9 @@ body{
 	float: left;
 	text-align: center;
 }
+.slide-con .slide-div .slide .slide-n ul li.active{
+	background-color: #4D4D4D;
+}
 .slide-con .slide-div .slide .slide-n ul li:last-child{
 	border: none;
 }
@@ -305,6 +314,8 @@ body{
 	background-image: url(images/good-design-bg.png);
 	background-repeat: no-repeat;
 	background-position: 0px -5px;
+	position: absolute;
+	left: 918px;
 }
 .slide-con .good-design .good-con{
 	width:220px;
@@ -414,6 +425,7 @@ body{
 	width: 990px;
 	height: 312px;
 	border: 1px solid #DBDBDB;
+	background-color: #fff;
 }
 .good-list .jptj-list .good li{
 	width:207px;
@@ -456,8 +468,12 @@ body{
 .good-list .jptj-list .good li p{
 	font-family: "SimSun" !important;
 	font-size: 12px;
-	margin-left: 12px;
-	margin-top: 16px;
+	height: 28px;
+	float: left;
+	width: 195px;
+	padding: 0;
+	line-height: 2;
+	padding-left: 12px;
 }
 .good-list .jptj-list .good li p span{
 	color: #5D9B1E;
@@ -466,6 +482,11 @@ body{
 	width: 54px;
 	height: 27px;
 	float: right;
+	background-color: #78AB00;
+	border-radius: 2px;
+	text-align: center;
+	color:#fff;
+	line-height: 2;
 }
 .footer{
 	width:100%;
