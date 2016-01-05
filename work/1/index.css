@@ -170,6 +170,7 @@ body{
 	background-position: 0px 12px;
 	background-image: url(images/head_bg.png);
 	background-repeat: no-repeat;
+	background-size: 100% 401px;
 }
 .slide-con{
 	width:990px;
