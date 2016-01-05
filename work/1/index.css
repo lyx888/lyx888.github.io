@@ -162,11 +162,12 @@ body{
 .container .back-bg{
 	height: 432px;
 	background-color: #fff;
-	background:-webkit-linear-gradient(top,#fff,#F9F6EF)
+	background:-webkit-linear-gradient(top,#fff,#F9F6EF);
+	background:-moz-linear-gradient(top,#fff,#F9F6EF);
 }
 .container .back-bg .back-bg-bg{
 	height: 432px;
-	background-position-y: 12px;
+	background-position: 0px 12px;
 	background-image: url(images/head_bg.png);
 	background-repeat: no-repeat;
 }
@@ -314,8 +315,7 @@ body{
 	background-image: url(images/good-design-bg.png);
 	background-repeat: no-repeat;
 	background-position: 0px -5px;
-	position: absolute;
-	left: 918px;
+	position: relative;
 }
 .slide-con .good-design .good-con{
 	width:220px;
@@ -454,6 +454,7 @@ body{
 	font-family: "SimSun" !important;
 	font-size: 12px;
 	text-align: center;
+	opacity: 0.5;
 }
 .good-list .jptj-list .good li .des1{
 	width: 190px;
@@ -464,6 +465,17 @@ body{
 	font-size: 12px;
 	margin-top: 25px;
 	margin-left: 12px;
+}
+.good-list .jptj-list .good li .des2{
+	display: block;
+	position: relative;
+	color: #fff;
+	font-family: "SimSun" !important;
+	font-size: 12px;
+	width: 190px;
+	height: 17px;
+	top: -19px;
+	text-align:center;
 }
 .good-list .jptj-list .good li p{
 	font-family: "SimSun" !important;
