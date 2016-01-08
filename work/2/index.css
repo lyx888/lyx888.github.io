@@ -1,0 +1,896 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+	overflow:auto;
+}
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	padding: 0;
+	margin: 0;
+}
+
+table {
+	border-collapse: collapse; /*单元格的压缩*/
+	border-spacing: 0;
+}
+
+fieldset,img {
+	border: 0;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-weight: normal;
+	font-style: normal;
+}
+
+ol,ul {
+	list-style: none;
+}
+
+caption,th {
+	text-align: left;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: normal;
+	font-size: 100%;
+}
+
+q:before,q:after {
+		content:”;
+}
+
+abbr,acronym { 
+	border: 0;
+}
+
+body{
+	width:100%;
+	height: 100%;
+	overflow: auto;
+}
+.header{
+	width:100%;
+	height:126px;
+	background-image: url(images/header-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+.header .header-con{
+	width: 960px;
+	height:126px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.header .header-con .nav{
+	width:200px;
+	height:16px;
+	text-align: right;
+	float: right;
+	overflow: hidden;
+	margin-top: 1px;
+}
+.header .header-con .nav ul li{
+	width:63px;
+	float: left;
+	border-right: 1px solid #ACAAA5;
+	text-align: center;
+	line-height: 16px;
+}
+.header .header-con .nav ul li:last-child{
+	border: none;
+}
+.header .header-con .nav ul li a{
+	color:#ACAAA5;
+	font-family: "SimSun" !important;
+	font-size: 12px;
+	text-decoration: none;
+}
+.header .header-con .head{
+	width: 960px;
+	height:63px;
+	overflow: hidden;
+}
+.header .header-con .head .logo{
+	width:228px;
+	height: 63px;
+	display: block;
+	float: left;
+}
+.header .header-con .head  .login-bf{
+	width:360px;
+	height:36px;
+	float: right;
+	overflow: hidden;
+	margin-top: 30px;
+}
+.header .header-con .head  .login-bf ul li{
+	width:155px;
+	height: 36px;
+	float: left;
+}
+.header .header-con .head  .login-bf ul li:last-child{
+	width:48px;
+	background-image: url(images/login-bf-btn.png);
+	background-repeat: no-repeat;
+	text-align: center;
+}
+.header .header-con .head  .login-bf ul li:last-child a{
+	font-family: "SimSun" !important;
+	font-size: 12px;
+	color: #F38458;
+	text-decoration: none;
+}
+.header .header-con .head  .login-bf ul li span{
+	font-family: "SimSun" !important;
+	font-size: 12px;
+	color: #7A7A7A;
+	float: left;
+	padding-top: 5px;
+}
+.header .header-con .head  .login-bf ul li input{
+	width:96px;
+	height: 21px;
+	line-height: 21px;
+	float: left;
+}
+.header .header-con .list{
+	width: 925px;
+	height: 20px;
+	float: left;
+	overflow: hidden;
+}
+.header .header-con .list ul li{
+	width:82px;
+	height:20px;
+	float: left;
+	text-align: center;
+	border-right: 1px solid #DADCDF;
+}
+.header .header-con .list ul li:last-child{
+	border:none;
+}
+.header .header-con .list a{
+	text-decoration: none;
+	font-family: "SimSun" !important;
+	font-size: 12px;
+	color: #797979;
+	font-weight: bold;
+}
+.slide{
+	height: 413px;
+	width: 100%;
+	overflow: hidden;
+}
+.slide .slide-show-con{
+	width: 100%;
+	height: 101px;
+	position: relative;
+	top:-101px;
+	background-color:#CFCFCF;
+	filter:alpha(opacity=50); /*IE8 以及更早的版本*/
+	-moz-opacity:0.5; 
+	-khtml-opacity: 0.5; 
+	opacity: 0.5;
+}
+.slide .slide-show{
+	width: 960px;
+	height: 101px;
+	position: relative;
+	top:-202px;
+	margin: 0 auto;
+	background-color: #574C4B;
+}
+.slide .slide-show ul{
+	width:900px;
+	height:100px;
+	overflow: hidden;
+	margin-left: 50px;
+}
+.slide .slide-show ul li{
+	width:225px;
+	height: 100px;
+	float: left;
+	overflow: hidden;
+}
+.slide .slide-show ul li div a{
+	text-decoration: none;
+	font-family: "SimSun" !important;
+	font-size: 12px;
+	color: #C5C5C5;
+	float: left;
+}
+.slide .slide-show ul li div a img{
+	width: 76px;
+	height: 75px;
+}
+.slide .slide-show ul li div a.slide-pic-name{
+	font-weight: bold;
+	margin-top: 19px;
+	width:128px;
+}
+.slide .slide-show ul li div a.slide-pic{
+	height: 75px;
+	width: 76px;
+	display: block;
+	margin-top: 19px;
+	margin-right: 12px;
+}
+.slide .slide-show ul li div a.slide-pic-des{
+	width: 128px;
+	height: 50px;
+	float: left;
+	margin-top: 10px;
+	line-height: 22px;
+}
+.container{
+	width: 100%;
+	height:auto;
+	background-color: #fff;
+}
+.container .nalan-portrait-active{
+	width: 960px;
+	height: 232px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 19px;
+	background-image: url(images/nalan-photo-bg.png);
+	background-repeat: no-repeat;
+}
+.container .nalan-portrait-active .nalan-portrait{
+	width: 680px;
+	height: 232px;
+	float: left;
+	overflow: hidden;
+}
+.container .nalan-portrait-active .nalan-portrait .nalan-portrait-head{
+	width:680px;
+	height:35px;
+}
+.container .nalan-portrait-active .nalan-portrait .nalan-portrait-head .nalan-portrait-head-img img{
+	width: 192px;
+	height: 22px;
+	margin-top: 10px;
+}
+.container .nalan-portrait-active .nalan-portrait .nalan-portrait-more{
+	height: 19px;
+	width: 66px;
+	float: right;
+	margin-right: 51px;
+	margin-top: 12px;
+	font-size: 14px;
+	font-family: "Arial" !important;
+}
+.container .nalan-portrait-active .nalan-portrait ul li{
+	width:105px;
+	height:180px;
+	float: left;
+	overflow: hidden;
+	margin-right: 16px;
+	margin-top: 12px;
+	text-align: center;
+}
+.container .nalan-portrait-active .nalan-portrait ul li:nth-child(1){
+	margin-left: 29px;
+}
+.container .nalan-portrait-active .nalan-portrait ul li a{
+	text-decoration: none;
+	font-family: "SimSun" !important;
+	font-size: 12px;
+	color: #A7A4A4;
+}
+.container .nalan-portrait-active .nalan-portrait ul li a img{
+	height: 150px;
+	width: 105px;
+	border: 3px solid #EAEAEA;
+	border-radius: 2px;
+}
+.container .nalan-portrait-active .nalan-active{
+	width:280px;
+	height: 232px;
+	overflow: hidden;
+	float: left;
+}
+.container .nalan-portrait-active .nalan-active .nalan-active-head img{
+	width: 76px;
+	height: 19px;
+	margin-top: 13px;
+	margin-bottom: 17px;
+}
+.container .nalan-portrait-active .nalan-active .nalan-active-more{
+	height: 19px;
+	width: 66px;
+	float: right;
+	margin-top: 12px;
+}
+.container .nalan-portrait-active .nalan-active .nalan-qq{
+	height: 65px;
+}
+.container .nalan-portrait-active .nalan-active .nalan-qq p{
+	line-height: 21px;
+	overflow: hidden;
+}
+.container .nalan-portrait-active .nalan-active .nalan-qq p span{
+	width: 100%;
+	float: left;
+	color: #F86D9E;
+	font-size: 12px;
+	font-family: "SimSun" !important;
+}
+.container .nalan-portrait-active .nalan-active .nalan-qq p span:last-child{
+	color: #393939;
+}
+.container .nalan-portrait-active .nalan-active ul li{
+	width: 100%;
+	height: 57px;
+	float: left;
+	text-align: left;
+	margin-top: 7px;
+}
+.container .nalan-portrait-active .nalan-active ul li:nth-child(1){
+	border-bottom: 1px solid #7D7D7D;
+}
+.container .nalan-portrait-active .nalan-active ul li img{
+	width: 65px;
+	height: 44px;
+	float: left;
+}
+.container .nalan-portrait-active .nalan-active ul li a{
+	text-decoration: none;
+	color: #7D7D7D;
+	font-size: 12px;
+	font-family: "SimSun" !important;
+	margin-left: 8px;
+}
+.container .nalan-portrait-active .nalan-active ul li span{
+	color: #7D7D7D;
+	font-size: 12px;
+	font-family: "SimSun" !important;
+	margin-left: 8px;
+}
+.container .nalan-workshow{
+	width: 960px;
+	height: 424px;
+	margin: 0 auto;
+	overflow: hidden;
+	background-image: url(images/nalan-workshow-bg.png);
+	background-repeat: no-repeat;
+	background-position: 0px 26px;
+}
+.container .nalan-workshow .nalan-workshow-top{
+	height:22px;
+	width: 100%;
+	float: left;
+}
+.container .nalan-workshow .nalan-workshow-top a img{
+	height: 22px;
+	width: 210px;
+	float: left;
+	margin-left: 29px;
+}
+.container .nalan-workshow .nalan-workshow-top a.nalan-workshow-more{
+	width: 50px;
+	height: 20px;
+	float: right;
+	background-color: #F8733D;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	margin-right: 43px;
+}
+.container .nalan-workshow .left{
+	width: 213px;
+	height: 369px;
+	float: left;
+	margin-top: 40px;
+	margin-left: 24px;
+}
+.container .nalan-workshow .left .img img{
+	width: 213px;
+	height: 314px;
+	/*border:3px solid #E6E5E1;
+	border-radius: 10px;*/
+	float: left;
+}
+.container .nalan-workshow .left .qyqf img{
+	width: 213px;
+	height: 47px;
+	float: left;
+	margin-top: 2px;
+}
+.container .nalan-workshow .right{
+	width:701px;
+	height: 364px;
+	margin-top: 40px;
+	float: left;
+	overflow: hidden;
+	margin-left: 22px;
+}
+.container .nalan-workshow .right ul li{
+	width: 217px;
+	height: 185px;
+	float: left;
+	overflow: hidden;
+	margin-right: 14px;
+}
+.container .nalan-workshow .right ul li a{
+	text-decoration: none;
+	color: #736F6F;
+	font-size: 12px;
+	font-family: "SimSun" !important;
+}
+.container .nalan-workshow .right ul li a.time{
+	background-color: #F3F3F3;
+	width: 212px;
+	height: 37px;
+	display: block;
+	line-height: 3;
+	padding-left: 6px;
+}
+.container .nalan-workshow .right ul li a span{
+	margin-left: 103px;
+}
+.container .nalan-workshow .right ul li a img{
+	width: 217px;
+	height: 145px;
+}
+.container .nalan-last{
+	width: 960px;
+	height: 938px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.container .nalan-last .left{
+	width: 635px;
+	height: 938px;
+	float: left;
+	overflow: hidden;
+}
+.container .nalan-last .left .nalan-business{
+	width: 100%;
+	height: 256px;
+	float: left;
+	overflow: hidden;
+}
+.container .nalan-last .left .nalan-business .nalan-business-head{
+	width: 100%;
+	height:49px;
+	overflow: hidden;
+}
+.container .nalan-last .left .nalan-business .nalan-business-head a img{
+	width: 155px;
+	height: 20px;
+	float: left;
+	margin-left: 43px;
+	margin-top: 22px;
+}
+.container .nalan-last .left .nalan-business .nalan-business-head a.nalan-business-more{
+	width:50px;
+	height: 19px;
+	float: right;
+	margin-top: 22px;
+	margin-left: 42px;
+	background-color: #F8733D;
+	color: #fff;
+	text-decoration: none;
+	font-family: "Arial" !important;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 5px;
+	margin-right: 43px;
+}
+.container .nalan-last .left .nalan-business ul{
+	background-image: url(images/bus-bg.png);
+	background-repeat: no-repeat;
+	background-position: 42px 0px;
+}
+.container .nalan-last .left .nalan-business ul li{
+	width: 297px;
+	height: 170px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 19px;
+}
+.container .nalan-last .left .nalan-business ul li .pic{
+	width: 103px;
+	height: 170px;
+	float: left;
+	text-align: center;
+}
+.container .nalan-last .left .nalan-business ul li .des{
+	width: 191px;
+	height: 170px;
+	float: left;
+	overflow: hidden;
+	padding-left: 2px;
+}
+.container .nalan-last .left .nalan-business ul li a{
+	text-decoration: none;
+	font-family: "SimSun" !important;
+	font-size: 12px;
+	color: #606060;
+	overflow: hidden;
+	line-height:2; 
+}
+.container .nalan-last .left .nalan-business ul li .pic a img{
+	width: 103px;
+	height: 123px;
+	float: left;
+	margin-right: 1px;
+}
+.container .nalan-last .left .nalan-business ul li .pic a.more{
+	width:50px;
+	height: 20px;
+	float: left;
+	background-color: #F76D9E;
+	margin-top: 26px;
+	margin-left: 27px;
+	line-height: 2;
+}
+.container .nalan-last .left .nalan-business ul li .des .title{
+	width: 100%;
+	color: #F76D9E;
+	font-weight: bold;
+}
+.container .nalan-last .left .nalan-business ul li .des span{
+	font-family: "SimSun" !important;
+	font-size: 12px;
+	color: #606060;
+}
+.container .nalan-show-dress{
+	height: 282px;
+	width: 635px;
+	overflow: hidden;
+}
+.container .nalan-show-dress .nalan-showdress-top{
+	height: 60px;
+	width: 635px;
+	background-image: url(images/bus1-bg.png);
+	background-repeat: no-repeat;
+	background-position: 21px 54px;
+}
+.container .nalan-show-dress .nalan-showdress-top .nalan-showdress-head img{
+	width: 197px;
+	height: 19px;
+	float: left;
+	margin-left: 25px;
+	margin-top: 29px;
+}
+.container .nalan-show-dress .nalan-showdress-top .nalan-showdress-more{
+	width:50px;
+	height: 19px;
+	float: right;
+	margin-top: 22px;
+	margin-left: 42px;
+	background-color: #F8733D;
+	color: #fff;
+	text-decoration: none;
+	font-family: "Arial" !important;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 5px;
+	margin-right: 43px;
+}
+.container .nalan-show-dress ul li{
+	width: 139px;
+	height: 193px;
+	float: left;
+	overflow: hidden;
+	margin-top: 20px;
+	margin-right: 16px;
+}
+.container .nalan-show-dress ul li:nth-child(1){
+	margin-left: 15px;
+}
+.container .actions-vip{
+	width: 635px;
+	height: 312px;
+	overflow: hidden;
+}
+.container .actions-vip .nalan-actions{
+	width: 310px;
+	height: 211px;
+	float: left;
+	margin-top: 23px;
+}
+.container .actions-vip .actions-top{
+	height: 68px;
+	width: 635px;
+	overflow: hidden;
+	background-image: url(images/bus1-bg.png);
+	background-repeat: no-repeat;
+	background-position: 21px 67px;
+}
+.container .actions-vip .actions-top .actions-img img{
+	width: 121px;
+	height: 18px;
+	float: left;
+	margin-top: 40px;
+	margin-left: 20px;
+}
+.container .actions-vip .actions-top .vip-img img{
+	width: 64px;
+	height: 17px;
+	float: left;
+	margin-top: 40px;
+	margin-left: 220px;
+}
+.container .actions-vip .actions-top .vip-more{
+	width:50px;
+	height: 19px;
+	float: right;
+	margin-top: 42px;
+	margin-left: 42px;
+	background-color: #F8733D;
+	color: #fff;
+	text-decoration: none;
+	font-family: "Arial" !important;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 5px;
+	margin-right: 43px;
+}
+.container .actions-vip .nalan-actions li:nth-child(1){
+	height: 92px;
+	width: 310px;
+	overflow: hidden;
+	margin:0;
+}
+.container .actions-vip .nalan-actions li:nth-child(1) .actions-img img{
+	width: 143px;
+	height: 89px;	
+	float: left;
+}
+.container .actions-vip .nalan-actions li:nth-child(1) p{
+	width: 160px;
+	height: 92px;
+	float: left;
+	overflow: hidden;
+	line-height: 20px;
+}
+.container .actions-vip .nalan-actions li:nth-child(1) p a{
+	text-decoration: none;
+	font-family: "SimSun" !important;
+	font-size: 12px;
+	color: #F86D9E;
+	width: 150px;
+	display: block;
+	overflow: hidden;
+	margin-left: 6px;
+}
+.container .actions-vip .nalan-actions li:nth-child(1) p a:last-child{
+	color: #595959;
+	margin-left: 2px;
+}
+.container .actions-vip .nalan-actions li{
+	width: 300px;
+	height: 20px;
+	float: left;
+	margin-left: 10px;
+}
+.container .actions-vip .nalan-actions li i{
+	background-image: url(images/li-before.png);
+	background-repeat: no-repeat;
+	height: 6px;
+	width: 4px;
+	float: left;
+	margin-right: 10px;
+	margin-top: 8px;
+}
+.container .actions-vip .nalan-actions li a{
+	text-decoration: none;
+	font-size: 12px;
+	font-family: "SimSun" !important;
+	color: #595959;
+}
+.container .actions-vip .nalan-vip{
+	height: 211px;
+	width: 290px;
+	margin-top: 27px;
+	overflow: hidden;
+	float: left;
+	margin-left: 20px;
+}
+.container .actions-vip .nalan-vip ul li{
+	height: 30px;
+	width: 290px;
+	border-bottom: 1px dotted #BFBFBF;
+}
+.container .actions-vip .nalan-vip ul li a{
+	text-decoration: none;
+	font-size: 12px;
+	font-family: "SimSun" !important;
+	color: #595959;
+}
+.container .actions-vip .nalan-vip ul li i{
+	background-image: url(images/li-before.png);
+	background-repeat: no-repeat;
+	height: 6px;
+	width: 4px;
+	float: left;
+	margin-right: 10px;
+	margin-top: 8px;
+}
+.container .actions-vip .between{
+	background-image: url(images/between.png);
+	background-repeat: no-repeat;
+	width: 5px;
+	height: 254px;
+	float: left;
+}
+.container .nalan-last .left .bottom{
+	background-image: url(images/down-showdress.png);
+	background-repeat: no-repeat;
+	width: 613px;
+	height: 30px;
+}
+.container .nalan-last  .right{
+	height: 938px;
+	width: 302px;
+	margin-left:23px;
+	overflow: hidden;
+	float: left;
+}
+.container .nalan-last  .right .nalan-showlove{
+	width: 338px;
+	height: 514px;
+	float: left;
+	background-image: url(images/showlove-bg.png);
+	background-repeat: no-repeat;
+}
+.container .nalan-last  .right .nalan-showlove .nalan-showlove-logo{
+	background-image: url(images/be-showlove.png);
+	background-repeat: no-repeat;
+	background-position: 0px 49px;
+	height: 65px;
+}
+.container .nalan-last  .right .nalan-showlove .nalan-showlove-logo img{
+	width: 164px;
+	height: 20px;
+	margin-top: 20px;
+	margin-left: 30px;
+}
+.container .nalan-last  .right .nalan-showlove ul li{
+	width: 299px;
+	height: 99px;
+	float: left;
+	overflow: hidden;
+	margin-left: 22px;
+	margin-top: 7px;
+	margin-bottom: 5px;
+}
+.container .nalan-last  .right .nalan-showlove ul li a{
+	text-decoration: none;
+	color: #7D7D7D;
+	font-family: "SimSun" !important;
+	font-size: 12px;
+}
+.container .nalan-last  .right .nalan-showlove ul li p.first-1{
+	width: 177px;
+	height: 66px;
+	float: left;
+	line-height: 22px;
+	margin-left: 11px;
+}
+.container .nalan-last  .right .nalan-showlove ul li p.first-2{
+	width: 262px;
+	height: 25px;
+	float: left;
+	background-color: #F8F8F8;
+}
+.container .nalan-last  .right .nalan-showlove ul li p.first-1 a:nth-child(1){
+	color: #F86D9E;
+	font-weight: bold;
+}
+.container .nalan-last  .right .nalan-showlove ul li a img{
+	width: 80px;
+	height: 61px;
+	float: left;
+}
+.container .nalan-last  .right .nalan-showlove ul li p.first-1 a i{
+	height: 9px;
+	width: 5px;
+	margin-right: 9px;
+	margin-top: 6px;
+	background-image: url(images/sanjiao.png);
+	background-repeat: no-repeat;
+	display: block;
+	float: left;
+}
+.container .nalan-last  .right .nalan-showlove ul li p.first-1 a:last-child{
+	text-indent: 10px;
+}
+.container .nalan-last  .right .nalan-showlove ul li p.first-1 a{
+	width: 177px;
+	display: block;
+}
+.container .nalan-last  .right .nalan-showlove ul li p.first-2 span{
+	font-family: "SimSun" !important;
+	font-size: 12px;
+	color: #7D7D7D;
+	margin-left: 18px;
+	float: left;
+	margin-top: 4px;
+}
+.container .nalan-last  .right .nalan-showlove ul li p.first-2 a{
+	text-decoration: none;
+	font-family: "SimSun" !important;
+	font-size: 12px;
+	color: #F86D9E;
+	float: right;
+	margin-right: 10px;
+	margin-top: 4px;
+}
+.container .nalan-last  .right .weixin{
+	width: 328px;
+	height: 487px;
+	float: left;
+	margin-top: 8px;
+}
+.container .nalan-last  .right .weixin a:first-child{
+	margin-left: 30px;
+}
+.footer{
+	width: 100%;
+	height: 388px;
+	background-image: url(images/footer.png);
+	background-repeat: no-repeat;
+	background-size: 100% 388px;
+	overflow: hidden;
+	margin-top: 10px;
+}
+.footer a{
+	text-decoration: none;
+	color: #B8B8B8;
+	font-size: 12px;
+	font-family: "SimSun" !important;
+}
+.footer p{
+	text-decoration: none;
+	color: #B8B8B8;
+	font-size: 12px;
+	font-family: "SimSun" !important;
+}
+.footer .footer-top{
+	height: 273px;
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.footer .footer-top ul li.footer-1{
+	width: 326px;
+	height: 273px;
+	float: left;
+	overflow: hidden;
+}
+.footer .footer-top ul li.footer-2{
+	width: 330px;
+	height: 273px;
+	float: left;
+	overflow: hidden;
+}
+.footer .footer-top ul li.footer-2 ul li{
+	width: 98px;
+	height: 95px;
+	float: left;
+	overflow: hidden;
+}
+.footer .footer-top ul li.footer-3{
+	width: 281px;
+	height: 273px;
+	float: left;
+	overflow: hidden;
+}
+.footer .footer-bottom{
+	height: 111px;
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 26px;
+}
+.footer .footer-bottom p{
+	text-align: center;
+	line-height: 26px;
+}

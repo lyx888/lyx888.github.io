@@ -275,6 +275,11 @@ body{
 	width: 536px;
 	height: 363px;
 }
+.slide-con .slide-div .slide .slide-scroll ul{
+	width: 583px;
+	height: 363px;
+	overflow: hidden;
+}
 .slide-con .slide-div .slide .slide-scroll img{
 	margin-left: -25px;
 }
